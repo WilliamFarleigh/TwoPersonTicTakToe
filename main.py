@@ -56,13 +56,12 @@ def click_event(x, y):
         x_true = False #check if in loc (x)
         y_true = False #check if in loc (y)
         #checks if in a square (x)
-        for i in range(width):
-            if (loc_x + i) == x:
-                x_true = True
-                break
+        if (loc_x <= x and loc_x + width >= loc_x:
+            x_true = True
+            break
         #checks if in a square (y)
         if x_true:
-            for i in range(height):
+            if (loc_y <= y and loc_y + height >= loc_y:
                 if (loc_y + i) == y:
                     y_true = True
                     break
